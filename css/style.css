@@ -239,7 +239,8 @@ img {
 }
 
 .about-us-title,
-.team-title {
+.team-title,
+.our-clients-title {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -325,6 +326,42 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+/* Our clients */
+
+.our-clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.our-clients-item + .our-clients-item {
+  margin-left: 30px;
+}
+
+.our-clients-link {
+  width: 170px;
+  height: 92px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4%;
+}
+
+.our-clients-icon {
+  fill: #afb1b8;
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.our-clients-link:hover .our-clients-icon,
+.our-clients-link:focus .our-clients-icon {
+  fill: var(--accent-color);
 }
 
 /* Portfolio */
