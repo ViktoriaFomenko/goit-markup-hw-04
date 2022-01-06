@@ -142,13 +142,13 @@ img {
 .envelope {
   width: 16px;
   height: 12px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .contacts-list .link:hover,
@@ -424,6 +424,8 @@ img {
 .filter-button:focus {
   color: var(--white);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-current {
@@ -442,6 +444,11 @@ img {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.card-set-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-content {
