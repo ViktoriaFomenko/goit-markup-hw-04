@@ -135,6 +135,22 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.header-item-icon {
+  margin-right: 10px;
+}
+.envelope {
+  width: 16px;
+  height: 12px;
+  color: currentColor;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  color: currentColor;
+}
+
 .contacts-list .link:hover,
 .contacts-list .link:focus {
   color: var(--accent-color);
