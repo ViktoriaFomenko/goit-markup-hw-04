@@ -128,15 +128,17 @@ img {
   margin-left: 50px;
 }
 
-.contacts-list .link {
+.contacts-list .contact-link {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.header-item-icon {
+.contact-icon {
   margin-right: 10px;
 }
 .envelope {
@@ -151,8 +153,8 @@ img {
   fill: currentColor;
 }
 
-.contacts-list .link:hover,
-.contacts-list .link:focus {
+.contacts-list .contact-link:hover,
+.contacts-list .contact-link:focus {
   color: var(--accent-color);
 }
 /* Hero */
@@ -446,11 +448,6 @@ img {
   margin-bottom: 30px;
 }
 
-.card-set-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-card-content {
   padding: 20px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
@@ -458,7 +455,7 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
-.card-set-item-title {
+.card-set-title {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -467,12 +464,22 @@ img {
   margin-bottom: 4px;
 }
 
-.card-set-item-text {
+.card-set-text {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-bottom: 0px;
+}
+
+.card-set-link {
+  display: block;
+}
+
+.card-set-link:hover,
+.card-set-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Footer */
@@ -484,6 +491,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .centre-part-footer {
